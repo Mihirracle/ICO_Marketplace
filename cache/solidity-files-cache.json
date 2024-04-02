@@ -1,0 +1,77 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\vishw\\OneDrive\\Desktop\\ICO_Marketplace\\contracts\\TheMihirVishwakarma.sol": {
+      "lastModificationDate": 1712067627453,
+      "contentHash": "5cdbe018afe755f5fbb37a7cc046ea14",
+      "sourceName": "contracts/TheMihirVishwakarma.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TheMihirVishwakarma"
+      ]
+    },
+    "C:\\Users\\vishw\\OneDrive\\Desktop\\ICO_Marketplace\\contracts\\TokenSaleContract.sol": {
+      "lastModificationDate": 1712067643144,
+      "contentHash": "0ee40b1a031870b01c53635bad16d290",
+      "sourceName": "contracts/TokenSaleContract.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TheMihirVishwakarma.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TokenSale"
+      ]
+    }
+  }
+}
