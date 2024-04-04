@@ -50,10 +50,12 @@ const index = () => {
       <MobileApp />
       <Team />
       <Faq />
+      <Client />
+      <ArrowUp />
       <Contact />
       <Footer />
     </div>
-  )
+  );
 };
 
 export default index;

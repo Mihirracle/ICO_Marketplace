@@ -6,31 +6,38 @@ const Service = () => {
       title: "Secure Storage",
       description:
         "Secure your data with our encrypted storage service.",
+        icon: "/assets/images/service_icon1.png"
     },
     {
       title: "Mobile App",
       description:
         "Secure your data with our encrypted storage service.",
+        icon: "/assets/images/service_icon2.png"
     },
     {
       title: "Exchange Service",
       description:
         "Secure your data with our encrypted storage service.",
+        icon: "/assets/images/service_icon3.png"
     },
     {
       title: "Investment Project",
       description:
         "Secure your data with our encrypted storage service.",
+        icon: "/assets/images/service_icon4.png"
     },
     {
       title: "Credit Card Use",
       description:
         "Secure your data with our encrypted storage service.",
+        icon: "/assets/images/service_icon5.png"
     },
     {
       title: "Planning",
       description:
         "Secure your data with our encrypted storage service.",
+        icon: "/assets/images/service_icon6.png"
+        
     },
   ];
   return (
@@ -68,6 +75,7 @@ const Service = () => {
                 data-animation="fadeInUp"
                 data-animation-delay={`0.${i + 1}s`}
               >
+                <img src={service.icon} alt={service.title} className="service_icon" />
                 <h4>{service.title}</h4>
                 <p>{service.description}</p>
               </div>

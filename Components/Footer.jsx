@@ -107,7 +107,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-6">
               <p className="copyright">
-                Copyright &copy; 2024 All Rights Reserved by @LOLCoin Miner
+                Copyright &copy; 2024 All Rights Reserved by @LOLCoin Miners
               </p>
             </div>
 

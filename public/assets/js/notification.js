@@ -7,7 +7,7 @@ Version      : 1.6
 ===================================*/
 
 var times = [3120, 4442, 5224, 7510, 8636, 16002, 17222];
-var countries = ['eng', 'us', 'eng_flage', 'fn', 'rus_flage', 'chn_flage', 'frn_flage'];
+var countries = ['eng', 'us', 'russia', 'fn', 'india', 'italy', 'germany'];
 var themeInterval = setInterval('notification()', time());
 
 function time() {
