@@ -51,6 +51,7 @@ const index = () => {
       <Team />
       <Faq />
       <Client />
+      <Blog />
       <ArrowUp />
       <Contact />
       <Footer />

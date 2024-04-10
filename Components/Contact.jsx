@@ -240,3 +240,164 @@ const Contact = () => {
 };
 
 export default Contact;
+
+//service_dzie5no
+//template_o6moybq
+//8FdkE-_CYHMVukr1M
+//CHAT GPT
+
+// import React, { useState } from "react";
+// import { init, sendForm } from "@emailjs/browser";
+// import {
+//   FaFacebookF,
+//   FaInstagram,
+//   FaTwitter,
+//   FaLinkedinIn,
+//   FaYoutube,
+// } from "react-icons/fa";
+// import { BsArrowRight } from "react-icons/bs";
+
+// const Contact = () => {
+//   const [formData, setFormData] = useState({
+//     name: "",
+//     email: "",
+//     subject: "",
+//     message: "",
+//   });
+
+//   const handleInputChange = (e) => {
+//     setFormData({ ...formData, [e.target.name]: e.target.value });
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+
+//     init("8FdkE-_CYHMVukr1M");
+
+//     sendForm("service_dzie5no", "template_o6moybq", e.target, "8FdkE-_CYHMVukr1M")
+//       .then(
+//         (result) => {
+//           console.log("SUCCESS!", result.text);
+//           setFormData({ name: "", email: "", subject: "", message: "" });
+//         },
+//         (error) => {
+//           console.log("FAILED...", error.text);
+//         }
+//       )
+//       .catch((error) => {
+//         console.error("Error sending email:", error);
+//       });
+//   };
+
+//   return (
+//     <section id="contact" className="contact_section small_pt">
+//       <div className="container">
+//         {/* Existing code */}
+//         <div className="row align-items-center small_space">
+//           <div className="col-lg-4 col-md-6 offset-lg-2">
+//             {/* Existing code */}
+//           </div>
+
+//           <div className="col-lg-5 col-md-6">
+//             <div
+//               className="pt-4 pt-md-0 animation"
+//               data-animation="fadeInUp"
+//               data-animation-delay="0.3s"
+//             >
+//               <form onSubmit={handleSubmit} className="field_form" name="enq">
+//                 <div
+//                   className="form-group col-md-12 animation"
+//                   data-animation="fadeInUp"
+//                   data-animation-delay="0.2s"
+//                 >
+//                   <input
+//                     type="text"
+//                     required
+//                     id="name"
+//                     placeholder="Enter name"
+//                     className="form-control"
+//                     name="name"
+//                     value={formData.name}
+//                     onChange={handleInputChange}
+//                   />
+//                 </div>
+//                 <div
+//                   className="form-group col-md-12 animation"
+//                   data-animation="fadeInUp"
+//                   data-animation-delay="0.2s"
+//                 >
+//                   <input
+//                     type="email"
+//                     required
+//                     id="email"
+//                     placeholder="Enter email"
+//                     className="form-control"
+//                     name="email"
+//                     value={formData.email}
+//                     onChange={handleInputChange}
+//                   />
+//                 </div>
+//                 <div
+//                   className="form-group col-md-12 animation"
+//                   data-animation="fadeInUp"
+//                   data-animation-delay="0.2s"
+//                 >
+//                   <input
+//                     type="text"
+//                     required
+//                     id="subject"
+//                     placeholder="Enter Subject"
+//                     className="form-control"
+//                     name="subject"
+//                     value={formData.subject}
+//                     onChange={handleInputChange}
+//                   />
+//                 </div>
+//                 <div
+//                   className="form-group col-md-12 animation"
+//                   data-animation="fadeInUp"
+//                   data-animation-delay="0.2s"
+//                 >
+//                   <textarea
+//                     type="text"
+//                     required
+//                     id="description"
+//                     placeholder="Message"
+//                     className="form-control"
+//                     name="message"
+//                     value={formData.message}
+//                     onChange={handleInputChange}
+//                     role="2"
+//                   />
+//                 </div>
+//                 <div
+//                   className="col-md-12 text-center animation"
+//                   data-animation="fadeInUp"
+//                   data-animation-delay="0.2s"
+//                 >
+//                   <button
+//                     type="submit"
+//                     title="Submit Your Message!"
+//                     className="btn btn-default btn-radius btn-block"
+//                     id="submitButton"
+//                     name="submit"
+//                   >
+//                     Submit <BsArrowRight />
+//                   </button>
+//                 </div>
+
+//                 <div className="col-md-12">
+//                   <div id="alert-msg" className="alert-msg text-center"></div>
+//                 </div>
+//               </form>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Contact;
+
+
