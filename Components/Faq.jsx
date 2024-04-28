@@ -221,22 +221,26 @@ const Faq = () => {
     {
       id: 1,
       question: "How can I buy the token?",
-      answer: "You can buy the token by visiting our 'Buy Token Now!' section and following the instructions provided.",
+      answer:
+        "You can buy the token by visiting our 'Buy Token Now!' section and following the instructions provided.",
     },
     {
       id: 2,
       question: "What payment methods are accepted?",
-      answer: "We accept Bitcoin, Ethereum, Litecoin, and Ripple as payment methods.",
+      answer:
+        "We accept Bitcoin, Ethereum, Litecoin, and Ripple as payment methods.",
     },
     {
       id: 3,
       question: "Can I transfer my tokens to another wallet?",
-      answer: "Yes, you can transfer your tokens to another wallet. Ensure the recipient's wallet is compatible.",
+      answer:
+        "Yes, you can transfer your tokens to another wallet. Ensure the recipient's wallet is compatible.",
     },
     {
       id: 4,
       question: "How secure is your platform?",
-      answer: "Our platform employs state-of-the-art security measures, including encryption and smart contract protocols, to ensure the safety of your assets.",
+      answer:
+        "Our platform employs state-of-the-art security measures, including encryption and smart contract protocols, to ensure the safety of your assets.",
     },
     // Add more FAQs as needed
   ];
@@ -249,12 +253,39 @@ const Faq = () => {
     open: {
       opacity: 1,
       height: "auto",
-      transition: { duration: 0.3, ease: "easeInOut" }, // Adjust duration and easing
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
     },
     collapsed: {
       opacity: 0,
       height: 0,
-      transition: { duration: 0.3, ease: "easeInOut" }, // Adjust duration and easing
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  const headerVariants = {
+    open: {
+      backgroundColor: "#333",
+      color: "#fff",
+      fontWeight: "bold",
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
+    },
+    closed: {
+      backgroundColor: "transparent",
+      color: "#fff",
+      fontWeight: "normal",
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
     },
   };
 
@@ -282,11 +313,8 @@ const Faq = () => {
           >
             <motion.header
               initial={false}
-              animate={{
-                backgroundColor: selectedId === faq.id ? "#333" : "transparent",
-                color: "#fff",
-                fontWeight: selectedId === faq.id ? "bold" : "normal",
-              }}
+              animate={selectedId === faq.id ? "open" : "closed"}
+              variants={headerVariants}
               onClick={() => toggleAccordion(faq.id)}
               style={{
                 padding: "20px",
